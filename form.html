@@ -2,52 +2,58 @@
 <html>
 <head>
 	<title>FORM</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
 </head>
 <body>
-	<h2>Form Biodata</h2>
-	<hr>
+	<div class="container">
+		<h2 class="alert alert-primary">Form Biodata</h2>
+		<hr>
 
-	<form method="post"	action="#">
-		<table border="0" cellspacing="0" cellpadding="3">
-			<tr>
-				<td><label for="username">username : </label></td>
-				<td colspan="2"><input type="text" name="" id="username"></td>
-			</tr>
-			<tr>
-				<td><label for="password"> password : </label></td>
-				<td colspan="2"><input type="password" name="" id="password"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label></td>
-				<td><input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label></td>
-			</tr>	
-			<tr>
-				<td><input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label></td>
-				<td><input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label></td>
-				<td><input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label></td>
-			</tr>
-			<tr>
-				<td colspan="3"><textarea></textarea></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><select>
-					<option>Ampenan</option>
-					<option>Mataram</option>
-					<option>Cakra</option>
-				</select></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>	
-				<td><button type="submit">KIRIM!</button></td>
-				<td><button type="reset">BATAL</button></td>
-				<td></td>
-			</tr>
-		</table>
-	</form>
-
+		<form method="post"	action="#">
+			<table border="0" cellspacing="0" cellpadding="3">
+				<div class="form-group">
+					<tr>
+						<td><label for="username">Username : </label></td>
+						<td colspan="2"><input type="text" name="" id="username" class="form-control"></td>
+					</tr>
+				</div>
+				<div class="form-group">
+					<tr>
+						<td><label for="password"> Password : </label></td>
+						<td colspan="2"><input type="password" name="" id="password" class="form-control"></td>
+					</tr>
+				</div>
+				<tr>
+					<td></td>
+					<td><input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label></td>
+					<td><input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label></td>
+				</tr>	
+				<tr>
+					<td><input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label></td>
+					<td><input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label></td>
+					<td><input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label></td>
+				</tr>
+				<tr>
+					<td colspan="3"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><select>
+						<option>Ampenan</option>
+						<option>Mataram</option>
+						<option>Cakra</option>
+					</select></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>	
+					<td><button type="submit" class="btn btn-primary mb-2">KIRIM!</button></td>
+					<td><button type="reset" class="btn btn-danger mb-2">BATAL</button></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
 </body>
 </html>
